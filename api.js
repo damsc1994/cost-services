@@ -38,8 +38,8 @@ api.use((req, res, next) => {
 });
 
 // Rutas
-api.use('/api', infoUserRoutes);
-api.use('/api', egressRoutes);
+api.use('/api/cost', infoUserRoutes);
+api.use('/api/cost', egressRoutes);
 
 // Manejo de errores
 api.use((err, req, res, next) => {
